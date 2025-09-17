@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FRIEND Enock — IT Professional</title>
+  <meta name="description" content="FRIEND Enock — IT Professional. Java, C, Spring Boot, React, Linux, Network Administration. Projects: Student Internship Management System, Border Management System, Hostel Booking Management System." />
+  <style>
+    :root{
+      --bg:#f7f9fc;
+      --card:#ffffff;
+      --text:#0b1220;
+      --muted:#6b7280;
+      --accent:#0ea5e9;
+      --glass: rgba(255,255,255,0.6);
+      --shadow: 0 6px 18px rgba(10,15,30,0.08);
+      --radius:14px;
+    }
+    [data-theme='dark']{ 
+      --bg:#0b1220; --card:#0f1724; --text:#e6eef6; --muted:#9aa6b2; --accent:#38bdf8; --glass: rgba(255, 255, 255, 0.03); --shadow: 0 6px 18px rgba(2,6,23,0.6);
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;color:var(--text);background:linear-gradient(180deg,var(--bg), #eef6fb);-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+
+    /* layout */
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;gap:14px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;box-shadow:var(--shadow)}
+    nav{display:flex;gap:14px;align-items:center}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--card);box-shadow:var(--shadow)}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),#7c3aed);color:white}
+
+    /* hero */
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:32px;align-items:center;padding:48px 0}
+    .hero h1{font-size:34px;margin:0}
+    .hero p{color:var(--muted);margin:12px 0 18px}
+    .cta{display:flex;gap:12px;flex-wrap:wrap}
+    .socials{display:flex;gap:8px;align-items:center}
+    .card{background:var(--card);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+
+    /* skills grid */
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .skill{padding:12px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,0.6),var(--glass));border:1px solid rgba(0,0,0,0.03)}
+
+    /* projects */
+    .projects{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .project{padding:16px;border-radius:12px;background:var(--card);box-shadow:var(--shadow)}
+    .project h4{margin:0 0 8px}
+    .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+    .chip{font-size:13px;padding:6px 8px;border-radius:999px;background:rgba(0,0,0,0.04)}
+
+    /* certificates */
+    .certs{display:flex;gap:10px;flex-wrap:wrap}
+    .cert{padding:8px 12px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,0.6),var(--glass));}
+
+    /* contact */
+    form{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    form textarea{grid-column:1/3;min-height:110px;padding:10px;border-radius:10px;border:1px solid rgba(0,0,0,0.06)}
+    input,textarea{background:transparent;color:var(--text);border:1px solid rgba(0,0,0,0.06);padding:10px;border-radius:8px}
+
+    footer{padding:24px 0;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+
+    /* responsive */
+    @media (max-width:1000px){.hero{grid-template-columns:1fr} .projects{grid-template-columns:repeat(2,1fr)} .grid{grid-template-columns:repeat(2,1fr)} }
+    @media (max-width:640px){.projects{grid-template-columns:1fr} nav{display:none} header{gap:8px} .container{padding:18px} }
+
+    /* small helpers */
+    .muted{color:var(--muted)}
+    .center{display:flex;align-items:center;justify-content:center}
+
+    /* smooth anchors */
+    html{scroll-behavior:smooth}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">FE</div>
+        <div>
+          <div style="font-weight:700">FRIEND Enock</div>
+          <div class="muted" style="font-size:13px">IT Professional — Java • Linux • Network Admin</div>
+        </div>
+      </div>
+
+      <nav>
+        <button id="theme-toggle" class="btn">Dark</button>
+        <a class="btn btn-primary" id="download-cv" href="#" download="FRIEND_Enock_CV.pdf">Download CV</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <h1>FRIEND Enock — IT Professional</h1>
+          <p>I am an IT Professional with hands-on experience in software development, system administration, and network operations. I build secure, scalable applications and keep systems healthy — using Java, Spring Boot, React, and Linux. Available for projects and collaboration.</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="#contact">Hire / Contact Me</a>
+            <a class="btn" href="#projects">See Projects</a>
+            <div class="socials">
+              <a class="btn" href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a>
+              <a class="btn" href="https://github.com/" target="_blank">GitHub</a>
+            </div>
+          </div>
+
+         
+        </div>
+
+        <aside>
+          <div class="card center" style="flex-direction:column;gap:12px">
+            <div style="font-weight:700">Contact</div>
+            <div class="muted">Tel: 0787845867</div>
+            <div class="muted">Email: <a href="mailto:friendeno123@gmail.com">friendeno123@gmail.com</a></div>
+            <div style="margin-top:8px;display:flex;gap:8px;width:100%">
+              <a class="btn" href="#projects">Projects</a>
+              <a class="btn" href="#contact">Message</a>
+            </div>
+            <small class="muted" style="margin-top:8px">Bachelor's Degree at AUCA</small>
+          </div>
+        </aside>
+      </section>
+
+      <section id="about" style="padding:26px 0">
+        <div class="card">
+          <h2>About Me</h2>
+          <p class="muted">I am an IT Professional skilled in software development and system administration. My core expertise includes Java, Spring Boot, React, Linux and Network Administration. I have built multi-tier Java systems and provided IT support at FOHA Rwanda. I’m passionate about secure, maintainable systems and continuous learning.</p>
+        </div>
+      </section>
+
+      <section id="skills" style="padding:26px 0">
+        <h3>Skills</h3>
+        <div class="grid" style="margin-top:12px">
+          <div class="skill card">
+            <strong>Programming</strong>
+            <div class="muted">Java, C, JavaScript, HTML, CSS</div>
+          </div>
+          <div class="skill card">
+            <strong>Frameworks</strong>
+            <div class="muted">Spring Boot, React</div>
+          </div>
+          <div class="skill card">
+            <strong>Systems & Networking</strong>
+            <div class="muted">Linux, Network Administration, NetOps</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" style="padding:26px 0">
+        <h3>Projects</h3>
+        <div class="projects" style="margin-top:12px">
+          <article class="project">
+            <h4>Student Internship Management System</h4>
+            <p class="muted">A Java-based client-server application using RMI for managing internship assignments, tracking students and supervisors, and generating reports.</p>
+            <div class="chips">
+              <span class="chip">Java</span>
+              <span class="chip">RMI</span>
+              <span class="chip">Swing</span>
+            </div>
+            <div style="margin-top:12px;display:flex;gap:8px">
+              <a class="btn" href="#" onclick="openRepo('https://github.com/')">View Repo</a>
+              <a class="btn btn-primary" href="#contact">Discuss</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <h4>Border Management System</h4>
+            <p class="muted">A secure system to manage border data, personnel and checkpoints. Focused on data integrity and role-based access.</p>
+            <div class="chips">
+              <span class="chip">Security</span>
+              <span class="chip">Backend</span>
+            </div>
+            <div style="margin-top:12px;display:flex;gap:8px">
+              <a class="btn" href="#" onclick="openRepo('https://github.com/')">View Repo</a>
+              <a class="btn" href="#contact">Request Demo</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <h4>Hostel Booking Management System</h4>
+            <p class="muted">An online booking system that allows students to view rooms, book and manage hostel reservations. Built with maintainability in mind.</p>
+            <div class="chips">
+              <span class="chip">PHP / MySQL</span>
+              <span class="chip">Nginx</span>
+            </div>
+            <div style="margin-top:12px;display:flex;gap:8px">
+              <a class="btn" href="#" onclick="openRepo('https://github.com/')">View Repo</a>
+              <a class="btn" href="#contact">Get In Touch</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="certificates" style="padding:26px 0">
+        <h3>Certificates</h3>
+        <div class="certs" style="margin-top:10px">
+          <div class="cert card">Internet Security</div>
+          <div class="cert card">Networking Essentials</div>
+          <div class="cert card">Network Operations (NetOps)</div>
+          <div class="cert card">Operating System Basics</div>
+        </div>
+      </section>
+
+      <section id="contact" style="padding:26px 0">
+        <h3>Contact Me</h3>
+        <div class="card" style="margin-top:12px">
+          <form id="contact-form">
+            <input type="text" name="name" placeholder="Your name" required />
+            <input type="email" name="email" placeholder="Your email" required />
+            <textarea name="message" placeholder="Your message" required></textarea>
+            <div style="display:flex;gap:8px">
+              <button type="submit" class="btn btn-primary">Send Message</button>
+              <a class="btn" href="mailto:friendeno123@gmail.com">Email Directly</a>
+            </div>
+          </form>
+        </div>
+        <div style="margin-top:12px" class="muted">Phone: 0787845867</div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div>© 2025 FRIEND Enock</div>
+    </footer>
+   
+  </div>
+
+  <script>
+    // Theme toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    const root = document.documentElement;
+    const saved = localStorage.getItem('fe-theme');
+    if(saved) root.setAttribute('data-theme', saved);
+    themeToggle.textContent = root.getAttribute('data-theme') === 'dark' ? 'Light' : 'Dark';
+    themeToggle.addEventListener('click', ()=>{
+      const cur = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', cur);
+      localStorage.setItem('fe-theme', cur);
+      themeToggle.textContent = cur === 'dark' ? 'Light' : 'Dark';
+    });
+
+    // Contact form (static) — replace with backend endpoint for CRUD
+    const form = document.getElementById('contact-form');
+    form.addEventListener('submit', (e)=>{
+      e.preventDefault();
+      const fd = new FormData(form);
+      // For now we open mailto with subject for quick testing; integrate with backend later
+      const name = encodeURIComponent(fd.get('name'));
+      const email = encodeURIComponent(fd.get('email'));
+      const msg = encodeURIComponent(fd.get('message'));
+      const mailto = `mailto:friendeno123@gmail.com?subject=Message from ${name}&body=From:%20${name}%20(${email})%0A%0A${msg}`;
+      window.location.href = mailto;
+    });
+
+    // small helpers
+    function openRepo(url){ window.open(url, '_blank') }
+
+    // Optional: detect dark by system preference on first load
+    if(!saved){
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if(prefersDark) { root.setAttribute('data-theme','dark'); themeToggle.textContent = 'Light'; }
+    }
+  </script>
+</body>
+</html>
